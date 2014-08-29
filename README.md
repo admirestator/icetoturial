@@ -17,6 +17,10 @@ Requirement
 + ICE Development Tools
 
 
+Build
+=====
+see *./compile.sh help*
+
 Test Environment
 ----------------
 + Opensuse 13.1

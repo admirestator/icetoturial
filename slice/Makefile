@@ -13,4 +13,7 @@ install:$(SLICES_OUTPUT)
 
 clean:
 	rm -rf $(SLICES_OUTPUT)
+	rm -rf  $(SLICES_HEADER) ../include/Printer.h
+	rm -rf  $(SLICES_SOURCE) ../src/Printer.cpp
+
 

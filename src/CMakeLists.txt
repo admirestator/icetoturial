@@ -1,10 +1,11 @@
-#SET(CMake_CXX_COMPILER clang++)
-SET(CMake_CXX_COMPILER g++)
+SET(CMake_CXX_COMPILER clang++)
+#SET(CMake_CXX_COMPILER g++)
 SET(SERVER_EXECUTABLE "Server")
 SET(CLIENT_EXECUTABLE "Client")
 
 SET(CMAKE_CXX_BASIC_FLAGS
-  "$ENV{CXXFLAGS} -Wall -Werror -cast-align -sign-compare missing-prototypes -Packed -Padded -unreachable-code -Inline disable-optimization"
+  "$ENV{CXXFLAGS} -Wall -Werror -cast-align -sign-compare missing-prototypes -Packed -Padded -unreachable-code -Inline disable-optimization
+  -Wextra -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Weffc++ -Wswitch-default "
   )
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_BASIC_FLAGS} -ggdb")
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_BASIC_FLAGS} -O2")
